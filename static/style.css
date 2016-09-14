@@ -1,2 +1,32 @@
 @import "css/bootstrap.min.css";
 @import "css/bootstrap-rtl.min.css";
+@font-face {
+	font-family: 'vazir';
+        src: url('fonts/Vazir.eot');
+
+	src: url('fonts/Vazir.eot?#iefix') format('eot'),  /* IE6–8 */
+url('fonts/Vazir.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+url('fonts/Vazir.ttf') format('ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'vazir';
+        src: url('fonts/Vazir-Bold.eot');
+
+	src: url('fonts/Vazir-Bold.eot?#iefix') format('eot'),  /* IE6–8 */
+url('fonts/Vazir-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+url('fonts/Vazir-Bold.ttf') format('ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'vazir';
+        src: url('fonts/Vazir-Light.eot');
+
+	src: url('fonts/Vazir-Light.eot?#iefix') format('eot'),  /* IE6–8 */
+url('fonts/Vazir-Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+url('fonts/Vazir-Light.ttf') format('ttf');
+	font-weight: 200;
+}
+body{
+    font-family: 'vazir';
+}
