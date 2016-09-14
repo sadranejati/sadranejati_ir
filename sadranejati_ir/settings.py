@@ -127,3 +127,6 @@ STATIC_URL = '/static/'
 SITE_CONFIG = {
     'title':"یه برنامه نویس سر به هوا"
 }
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
