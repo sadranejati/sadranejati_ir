@@ -1,58 +1,90 @@
 @import "css/bootstrap.min.css";
 @import "css/bootstrap-rtl.min.css";
-@font-face {
-	font-family: 'vazir';
-        src: url('fonts/Vazir.eot');
 
-	src: url('fonts/Vazir.eot?#iefix') format('eot'),  /* IE6–8 */
-url('fonts/Vazir.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-url('fonts/Vazir.ttf') format('ttf');
-	font-weight: normal;
-}
 @font-face {
-	font-family: 'vazir';
-        src: url('fonts/Vazir-Bold.eot');
+    font-family: 'vazir';
+    src: url('fonts/Vazir.eot');
 
-	src: url('fonts/Vazir-Bold.eot?#iefix') format('eot'),  /* IE6–8 */
-url('fonts/Vazir-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-url('fonts/Vazir-Bold.ttf') format('ttf');
-	font-weight: bold;
+    src: url('fonts/Vazir.eot?#iefix') format('eot'), /* IE6–8 */ url('fonts/Vazir.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/Vazir.ttf') format('ttf');
+    font-weight: normal;
 }
+
 @font-face {
-	font-family: 'vazir';
-        src: url('fonts/Vazir-Light.eot');
+    font-family: 'vazir';
+    src: url('fonts/Vazir-Bold.eot');
 
-	src: url('fonts/Vazir-Light.eot?#iefix') format('eot'),  /* IE6–8 */
-url('fonts/Vazir-Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-url('fonts/Vazir-Light.ttf') format('ttf');
-	font-weight: 200;
+    src: url('fonts/Vazir-Bold.eot?#iefix') format('eot'), /* IE6–8 */ url('fonts/Vazir-Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/Vazir-Bold.ttf') format('ttf');
+    font-weight: bold;
 }
-body{
+
+@font-face {
+    font-family: 'vazir';
+    src: url('fonts/Vazir-Light.eot');
+
+    src: url('fonts/Vazir-Light.eot?#iefix') format('eot'), /* IE6–8 */ url('fonts/Vazir-Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('fonts/Vazir-Light.ttf') format('ttf');
+    font-weight: 200;
+}
+
+body {
     font-family: 'vazir';
 }
-.site > .menu{
+
+.site > .menu {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-top: none;
 }
-.site > .menu > div > .items > li{
+
+.site > .menu > div > .items > li {
     font-weight: 100;
     font-size: 14px;
 }
-.site > .menu > div > .items > li > a:hover{
+
+.site > .menu > div > .items > li > a:hover {
     color: #8e44ad;
 }
-.site > .header > .container > h1{
+
+.site > .header > .container > h1 {
     font-weight: 600;
+    color: #ffffff;
 }
-.site > .header > .container > h2{
+
+.site > .header > .container > h2 {
     font-weight: 100;
     font-size: 24px;
-    color: #8e44ad;
-    margin-top: 35px;
+    color: #ffffff;
+    margin-top: 40px;
 }
+
 .site > .header {
-    background-color: #f8f8f8;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.39) ),url("images/background.jpg");
+    background-size: cover;
+    background-position: center right;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 20px;
+}
+
+.alert > button > span {
+    position: relative;
+    top: 4px;
+}
+
+@media only screen and (max-width: 766px) {
+    .site > .header > .container > h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .site > .header > .container > h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .site > .header {
+        position: relative;
+        top: -20px;
+        background-size: 768px;
+        background-position: center right;
+    }
 }

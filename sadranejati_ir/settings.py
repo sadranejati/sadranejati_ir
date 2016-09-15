@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+STATIC_ROOT = "/"
 
 SITE_CONFIG = {
     'title':"یه برنامه نویس سر به هوا",
