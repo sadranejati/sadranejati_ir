@@ -1,10 +1,22 @@
 {% extends 'index.html' %}
+{% load staticfiles %}
 {% block title %}صفحه اصلی{% endblock %}
 {% block contents %}
-
-<div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>با عرض پوزش</strong> هم اکنون سرور ها دچار مشکل شده اند لطفا چند لحظه صبر نمایید
-</div>
-    <div class="col-lg-4 col-sm-12"></div>
+    <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <strong>با عرض پوزش</strong> هم اکنون سرور ها دچار مشکل شده اند لطفا چند لحظه صبر نمایید
+        </div>
+        <div class="row">
+            <div class="post thumbnail">
+                <img src="{% static "images/1.jpg" %}" />
+                <div class="caption">
+        <h3>عنوان مطلب</h3>
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        <p><a href="#" class="btn btn-primary" role="button">متن کامل</a>
+      </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
