@@ -57,7 +57,7 @@ body {
 }
 
 .site > .header {
-    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.39) ),url("images/background.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.39)), url("images/background.jpg");
     background-size: cover;
     background-position: center right;
     padding-top: 50px;
@@ -88,10 +88,31 @@ body {
         background-position: center right;
     }
 }
-.post{
 
+.photo_post, .twitt,.post,.pagination{
     margin: 15px;
 }
-.site .post img{
+
+.site .photo_post img {
     max-width: 100%;
+}
+
+.photo_post .caption > p {
+    margin-top: 10px;
+}
+
+.twitt {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.post .blog_img{
+    background-size: cover !important;
+    background-position: center right !important;
+    width: 100%;
+    height: 300px;
+}
+.footer{
+    background-color: #333333;
+    padding: 30px;
+    color: #ffffff;
 }
