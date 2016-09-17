@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class post(models.Model):
     post_type_choice = (('p','photo'),('b','blog'),('t','twitt'))
-    title = models.CharField()
+    title = models.CharField(max_length=125)
     content = models.TextField()
     photo = models.ImageField()
     date_published = models.DateTimeField(auto_now_add=True,auto_now=False)
