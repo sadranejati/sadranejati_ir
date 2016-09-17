@@ -1,3 +1,4 @@
+/* بسم الله الرحمن الحریم */
 @import "css/bootstrap.min.css";
 @import "css/bootstrap-rtl.min.css";
 
@@ -115,4 +116,19 @@ body {
     background-color: #333333;
     padding: 30px;
     color: #ffffff;
+}
+.site .post > .blog_img{
+    position: relative;
+}
+.site .post > .blog_img > h3{
+        position: absolute;
+    bottom: -10px;
+    padding: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #e1e1e1;
+}
+.navbar-default .navbar-brand {
+    position: relative;
+    top: 3px;
 }
