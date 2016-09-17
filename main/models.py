@@ -13,5 +13,4 @@ class post(models.Model):
     post_type = models.CharField(choices=post_type_choice,max_length=1)
     can_send_comment = models.BooleanField(default=False)
     slug = models.SlugField()
-    post_status_choice = (('pub','published'),('pen','pending'))
-    status = models.CharField(max_length=3,choices=post_status_choice)
+    published = models.BooleanField(default=True)
