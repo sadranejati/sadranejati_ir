@@ -14,3 +14,14 @@ class post(models.Model):
     can_send_comment = models.BooleanField(default=False)
     slug = models.SlugField()
     published = models.BooleanField(default=True)
+
+class comment(models.Model):
+    name = models.CharField(max_length=125)
+    email = models.EmailField()
+    url = models.URLField()
+    content = models.TextField()
+    comment_status_type = (('u','published'),('e','pending'),('d','deleted'))
+    comment_status = models.CharField(max_length=3,choices=comment_status_type)
+    reply = models.TextField(default=)
+    date_published = models.DateTimeField(auto_now_add=True,auto_now=False)
+    date_answered = models.DateTimeField(auto_now=True,auto_now_add=False)
