@@ -12,7 +12,7 @@ class post(models.Model):
     author = models.ForeignKey(User)
     post_type = models.CharField(choices=post_type_choice,max_length=1)
     can_send_comment = models.BooleanField(default=False)
-    slug = models.SlugField()
+    slug = models.SlugField(unique_for_month=date_published)
     published = models.BooleanField(default=True)
 
 class comment(models.Model):
@@ -22,6 +22,11 @@ class comment(models.Model):
     content = models.TextField()
     comment_status_type = (('u','published'),('e','pending'),('d','deleted'))
     comment_status = models.CharField(max_length=3,choices=comment_status_type)
-    reply = models.TextField(default=)
+    reply = models.TextField(default=None)
     date_published = models.DateTimeField(auto_now_add=True,auto_now=False)
     date_answered = models.DateTimeField(auto_now=True,auto_now_add=False)
+
+class category (models.Model):
+    title = models.CharField(max_length=125)
+    slug = models.SlugField(unique=True)
+    post = models.ManyToManyField(post)
